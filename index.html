@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo Cafe</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <header>
+    <h1> LEO CAFE </h1>
+  </header>
+
+  <main id="categories">
+    <!-- Kategoriler -->
+    <div class="category" onclick="showCategory('drinks')">
+      <img src="images/içecekler.jpeg" alt="İçecekler">
+      <h2>İçecekler</h2>
+    </div>
+    <div class="category" onclick="showCategory('atıştırmalık')">
+        <img src="images/içecekler.jpeg" alt="Atıştırmalıklar">
+        <h2>Atıştırmalıklar</h2>
+      </div>
+      <div class="category" onclick="showCategory('atıştırmalık')">
+        <img src="images/içecekler.jpeg" alt="Atıştırmalıklar">
+        <h2>Atıştırmalıklar</h2>
+      </div>
+      <div class="category" onclick="showCategory('atıştırmalık')">
+        <img src="images/içecekler.jpeg" alt="Atıştırmalıklar">
+        <h2>Atıştırmalıklar</h2>
+      </div>
+    
+    <div class="category" onclick="showCategory('main-courses')">
+      <img src="images/anayemek.jpeg" alt="Ana Yemekler">
+      <h2>Ana Yemekler</h2>
+    </div>
+    <div class="category" onclick="showCategory('desserts')">
+      <img src="images/desserts.jpg" alt="Tatlılar">
+      <h2>Tatlılar</h2>
+    </div>
+  </main>
+
+  <section id="menu-content" style="display: none;">
+    <!-- Dinamik içerik buraya yüklenecek -->
+    <button onclick="goBack()">Geri</button>
+    <div id="content"></div>
+  </section>
+
+  <script src="menu.js"></script>
+</body>
+</html>
